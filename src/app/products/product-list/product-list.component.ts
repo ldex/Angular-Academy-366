@@ -17,6 +17,10 @@ export class ProductListComponent {
   }
 
   constructor(private productService: ProductService) {
-    this.products = productService.getProducts();
+    productService
+      .products$
+      .subscribe(
+        results => this.products = results
+      )
   }
 }
