@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { ProductsModule } from './products/products.module';
+import { AdminComponent } from './shared/admin.component';
+import { HomeComponent } from './shared/home.component';
+import { ErrorComponent } from './shared/error.component';
+import { ContactComponent } from './shared/contact.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +19,12 @@ import { ProductsModule } from './products/products.module';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule,
-    ProductsModule
+    ProductsModule,
+    AdminComponent,
+    HomeComponent,
+    ErrorComponent,
+    ContactComponent,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
