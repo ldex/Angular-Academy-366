@@ -16,7 +16,7 @@ export class ProductDetailComponent {
     private activatedRoute: ActivatedRoute,
     private productService: ProductService) {
 
-    let id = activatedRoute.snapshot.params['id'];
+    let id = + activatedRoute.snapshot.params['id'];
     this
       .productService
       .getProductById(id)
